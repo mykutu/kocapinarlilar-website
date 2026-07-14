@@ -32,12 +32,13 @@ body {
 .navbar-toggle {
 	position:relative;
 	float:left;
-	display:block;
+	display:flex;
+	align-items:center;
 	padding: 9px 10px;
 	background: rgba(255, 255, 255, 0.2);
 	background-image: none;
 	border: 0 none;
-	top:0px; 
+	top:0px;
 	-webkit-border-radius: 2px;
 	   -moz-border-radius: 2px;
 	        border-radius: 2px;
@@ -47,6 +48,14 @@ body {
 	   -moz-transition: all .45s;
 	        transition: all .45s;
 	        float: left;
+}
+.navbar-toggle-icon {
+	display: block;
+}
+.navbar-toggle-label {
+	margin-left: 8px;
+	font-size: 14px;
+	line-height: 1;
 }
 .navbar-toggle .icon-bar {
   display: block;
