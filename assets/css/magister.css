@@ -33,7 +33,10 @@ body {
 	position:relative;
 	float:left;
 	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
 	align-items:center;
+	white-space:nowrap;
 	padding: 9px 10px;
 	background: rgba(255, 255, 255, 0.2);
 	background-image: none;
@@ -51,11 +54,15 @@ body {
 }
 .navbar-toggle-icon {
 	display: block;
+	flex-shrink: 0;
 }
 .navbar-toggle-label {
+	display: inline-block;
+	flex-shrink: 0;
 	margin-left: 8px;
 	font-size: 14px;
 	line-height: 1;
+	white-space: nowrap;
 }
 .navbar-toggle .icon-bar {
   display: block;
