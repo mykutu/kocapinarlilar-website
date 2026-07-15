@@ -9,6 +9,7 @@ Options -Indexes
 	Header always set X-Frame-Options "SAMEORIGIN"
 	Header always set Referrer-Policy "strict-origin-when-cross-origin"
 	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()"
 </IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
